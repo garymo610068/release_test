@@ -15,8 +15,8 @@
   </properties>
   
   <scm>
-  	<connection>scm:git:ssh://git@github.com/garymo610068/release_test.git</connection>
-  	<developerConnection>scm:git:ssh://git@github.com/garymo610068/release_test.git</developerConnection>
+  	<connection>scm:git:ssh://git@github.com/garymo610068/release_test</connection>
+  	<developerConnection>scm:git:ssh://git@github.com/garymo610068/release_test</developerConnection>
   	<url>https://github.com/garymo610068/release_test</url>
   </scm>
   
