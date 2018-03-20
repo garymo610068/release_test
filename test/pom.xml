@@ -12,14 +12,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <!--  
   <scm>
   	<connection>scm:git:ssh://git@github.com/garymo610068/release_test.git</connection>
   	<developerConnection>scm:git:ssh://git@github.com/garymo610068/release_test.git</developerConnection>
   	<url>https://github.com/garymo610068/release_test</url>
     <tag>test-1.0.1</tag>
   </scm>
-  -->
   
   <build>
   	<plugins>
@@ -34,12 +32,12 @@
 			</configuration>
 		</plugin>
   		 -->
+    <!--  
 		<plugin>
 			<groupId>external.atlassian.jgitflow</groupId>
 			<artifactId>jgitflow-maven-plugin</artifactId>
 			<version>1.0-m5.1</version>
 			<configuration>
-				<!-- see goals wiki page for configuration options -->
 				<flowInitContext>
 					<masterBranchName>test</masterBranchName>
 					<developBranchName>development</developBranchName>
@@ -47,6 +45,17 @@
 				</flowInitContext>
 				<username>${scm.username}</username>
 				<password>${scm.password}</password>
+			</configuration>
+		</plugin>
+		-->
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-scm-plugin</artifactId>
+			<version>1.9.5</version>
+			<configuration>
+				<connectionType>developerConnection</connectionType>
+<!--  				<basedir>/home/gary/branch</basedir>-->
+<!--				<branch>release</branch>-->
 			</configuration>
 		</plugin>
 	</plugins>
