@@ -40,9 +40,13 @@
 			<version>1.0-m5.1</version>
 			<configuration>
 				<!-- see goals wiki page for configuration options -->
-				<masterBranchName>test</masterBranchName>
-				<developBranchName>development</developBranchName>
-				<releaseBranchPrefix>release-</releaseBranchPrefix>
+				<flowInitContext>
+					<masterBranchName>test</masterBranchName>
+					<developBranchName>development</developBranchName>
+					<releaseBranchPrefix>release-</releaseBranchPrefix>
+				</flowInitContext>
+				<username>${scm.username}</username>
+				<password>${scm.password}</password>
 			</configuration>
 		</plugin>
 	</plugins>
